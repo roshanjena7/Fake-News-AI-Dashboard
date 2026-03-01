@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at 20% 20%, #1e3a8a, #020617);
+  color: white;
+}
+
+/* Layout */
+
+.layout {
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  color: #38bdf8;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.sidebar a:hover {
+  opacity: 1;
+}
+
+.logout-btn {
+  margin-top: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+/* Cards */
+
+.card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.glow {
+  box-shadow: 0 0 40px rgba(0,255,255,0.2);
+}
+
+/* Grid */
+
+.result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Button */
+
+.primary-btn {
+  margin-top: 10px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #06b6d4, #3b82f6);
+  color: white;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+}
+
+/* Prediction */
+
+.fake {
+  color: #ff4d6d;
+}
+
+.real {
+  color: #00ffaa;
+}
+
+.keyword {
+  background: #06b6d4;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-right: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
